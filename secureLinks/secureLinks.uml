@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:UMLsec="http://www.umlsec.de/profiles/UMLsec" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
+  <uml:Model xmi:id="_l-B94Fm0EeyZquujrGMQag" name="secureLinks">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_l-_AIFm0EeyZquujrGMQag">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Node" xmi:id="_nF6zAFm0EeyZquujrGMQag" name="Node1">
+      <deployment xmi:type="uml:Deployment" xmi:id="_r8ZZwFm0EeyZquujrGMQag" client="_nF6zAFm0EeyZquujrGMQag" supplier="_pobMAFm0EeyZquujrGMQag" deployedArtifact="_pobMAFm0EeyZquujrGMQag"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Node" xmi:id="_na_rIFm0EeyZquujrGMQag" name="Node2">
+      <deployment xmi:type="uml:Deployment" xmi:id="_rc1I4Fm0EeyZquujrGMQag" client="_na_rIFm0EeyZquujrGMQag" supplier="_p57ywFm0EeyZquujrGMQag" deployedArtifact="_p57ywFm0EeyZquujrGMQag"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Artifact" xmi:id="_pobMAFm0EeyZquujrGMQag" name="Artifact1" fileName=""/>
+    <packagedElement xmi:type="uml:Artifact" xmi:id="_p57ywFm0EeyZquujrGMQag" name="Artifact2" fileName=""/>
+    <packagedElement xmi:type="uml:CommunicationPath" xmi:id="_sjkugFm0EeyZquujrGMQag" name="communication path" memberEnd="_sjmjsFm0EeyZquujrGMQag _sjoY4Fm0EeyZquujrGMQag">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_sjl8oFm0EeyZquujrGMQag" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_sjl8oVm0EeyZquujrGMQag" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_sjmjsFm0EeyZquujrGMQag" name="node3" type="_na_rIFm0EeyZquujrGMQag" association="_sjkugFm0EeyZquujrGMQag"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_sjoY4Fm0EeyZquujrGMQag" name="node2" type="_nF6zAFm0EeyZquujrGMQag" association="_sjkugFm0EeyZquujrGMQag"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_tcKjYFm0EeyZquujrGMQag" client="_pobMAFm0EeyZquujrGMQag" supplier="_p57ywFm0EeyZquujrGMQag"/>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_uzaqMFm0EeyZquujrGMQag">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_uzb4UFm0EeyZquujrGMQag" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.umlsec.de/profiles/UMLsec#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://UMLsec/UMLsec.uml#_kGQWQDnkEeCyb9nmG-9Lpw"/>
+    </profileApplication>
+  </uml:Model>
+  <UMLsec:securelinks xmi:id="_v8jcgFm0EeyZquujrGMQag" base_Package="_l-B94Fm0EeyZquujrGMQag"/>
+  <UMLsec:secrecy xmi:id="_yC5d8Fm0EeyZquujrGMQag" base_Dependency="_tcKjYFm0EeyZquujrGMQag"/>
+  <UMLsec:Internet xmi:id="_2LdM8ABMEe6rq6Ijeb8aSg" base_CommunicationPath="_sjkugFm0EeyZquujrGMQag"/>
+</xmi:XMI>
