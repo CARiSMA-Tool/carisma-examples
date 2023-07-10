@@ -1,6 +1,6 @@
 # Trust Management for IDS Examples
 Here you can find examples for the trust management check for IDS.
-It checks if a node object is anotated with a security profile.
+It checks if each node object is anotated with a security profile.
 Otherwise the check will fail.
 
 If each node hast a security profile, represented through a stereotype, the communication rules are checked.
